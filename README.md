@@ -15,3 +15,5 @@ Sightseeing parameters:
 - kid-friendly
 - price(?) tentatively ignore this for now
 - description
+
+Pharmacies/urgent care?
