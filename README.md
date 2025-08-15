@@ -5,6 +5,7 @@ Restaurant parameters:
 - rating(e.g. 4.5[stars])
 - kid-friendly: yes/no
 - price(e.g. $, $$, $$$, $$$$)
+- description
 
 Sightseeing parameters:
 - id
@@ -13,3 +14,4 @@ Sightseeing parameters:
 - rating
 - kid-friendly
 - price(?) tentatively ignore this for now
+- description
