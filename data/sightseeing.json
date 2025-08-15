@@ -1,182 +1,79 @@
 [
   {
-    "id": "p1",
-    "title": "Forest Waterfall",
-    "image": {
-      "src": "forest-waterfall.jpg",
-      "alt": "A tranquil forest with a cascading waterfall amidst greenery."
-    },
-    "lat": 44.5588,
-    "lon": -80.344
+    "id": 1,
+    "place_name": "Tokyo Skytree",
+    "description": "A 634-meter broadcasting tower with observation decks offering panoramic views of Tokyo and beyond.",
+    "neighborhood": "Sumida",
+    "recommended_duration_hours": 2,
+    "best_for": ["families", "teens", "photography"],
+    "ticket_price_yen": 2100,
+    "opening_hours": "09:00-21:00",
+    "nearby_transport": ["Oshiage Station"]
   },
   {
-    "id": "p2",
-    "title": "Sahara Desert Dunes",
-    "image": {
-      "src": "desert-dunes.jpg",
-      "alt": "Golden dunes stretching to the horizon in the Sahara Desert."
-    },
-    "lat": 25.0,
-    "lon": 0.0
+    "id": 2,
+    "place_name": "Ueno Zoo",
+    "description": "Japan's oldest zoo, home to giant pandas, tigers, and more, set within Ueno Park.",
+    "neighborhood": "Ueno",
+    "recommended_duration_hours": 3,
+    "best_for": ["families", "young kids", "animal lovers"],
+    "ticket_price_yen": 600,
+    "opening_hours": "09:30-17:00",
+    "nearby_transport": ["Ueno Station"]
   },
   {
-    "id": "p3",
-    "title": "Himalayan Peaks",
-    "image": {
-      "src": "majestic-mountains.jpg",
-      "alt": "The sun setting behind snow-capped peaks of majestic mountains."
-    },
-    "lat": 27.9881,
-    "lon": 86.925
+    "id": 3,
+    "place_name": "TeamLab Planets TOKYO",
+    "description": "Immersive digital art museum with interactive, walk-through installations that change as you move.",
+    "neighborhood": "Toyosu",
+    "recommended_duration_hours": 1.5,
+    "best_for": ["families", "teens", "art lovers"],
+    "ticket_price_yen": 3200,
+    "opening_hours": "10:00-20:00",
+    "nearby_transport": ["Shin-Toyosu Station"]
   },
   {
-    "id": "p4",
-    "title": "Caribbean Beach",
-    "image": {
-      "src": "caribbean-beach.jpg",
-      "alt": "Pristine white sand and turquoise waters of a Caribbean beach."
-    },
-    "lat": 18.2208,
-    "lon": -66.5901
+    "id": 4,
+    "place_name": "Asakusa & Sensō-ji Temple",
+    "description": "Historic Buddhist temple with vibrant shopping streets, street food, and cultural atmosphere.",
+    "neighborhood": "Asakusa",
+    "recommended_duration_hours": 2,
+    "best_for": ["families", "culture lovers", "photography"],
+    "ticket_price_yen": 0,
+    "opening_hours": "Always open",
+    "nearby_transport": ["Asakusa Station"]
   },
   {
-    "id": "p5",
-    "title": "Ancient Grecian Ruins",
-    "image": {
-      "src": "ruins.jpg",
-      "alt": "Historic ruins standing tall against the backdrop of the Grecian sky."
-    },
-    "lat": 37.9715,
-    "lon": 23.7257
+    "id": 5,
+    "place_name": "Odaiba Seaside Park",
+    "description": "Waterfront park with a replica Statue of Liberty, Rainbow Bridge views, and nearby malls.",
+    "neighborhood": "Odaiba",
+    "recommended_duration_hours": 2,
+    "best_for": ["families", "relaxation", "sightseeing"],
+    "ticket_price_yen": 0,
+    "opening_hours": "Always open",
+    "nearby_transport": ["Daiba Station"]
   },
   {
-    "id": "p6",
-    "title": "Amazon Rainforest Canopy",
-    "image": {
-      "src": "rainforest.jpg",
-      "alt": "Lush canopy of a rainforest, teeming with life."
-    },
-    "lat": -3.4653,
-    "lon": -62.2159
+    "id": 6,
+    "place_name": "Ghibli Museum",
+    "description": "Charming museum dedicated to Studio Ghibli films, with whimsical exhibits and short films.",
+    "neighborhood": "Mitaka",
+    "recommended_duration_hours": 2,
+    "best_for": ["families", "animation lovers", "kids"],
+    "ticket_price_yen": 1000,
+    "opening_hours": "10:00-18:00",
+    "nearby_transport": ["Mitaka Station"]
   },
   {
-    "id": "p7",
-    "title": "Northern Lights",
-    "image": {
-      "src": "northern-lights.jpg",
-      "alt": "Dazzling display of the Northern Lights in a starry sky."
-    },
-    "lat": 64.9631,
-    "lon": -19.0208
-  },
-  {
-    "id": "p8",
-    "title": "Japanese Temple",
-    "image": {
-      "src": "japanese-temple.jpg",
-      "alt": "Ancient Japanese temple surrounded by autumn foliage."
-    },
-    "lat": 34.9949,
-    "lon": 135.785
-  },
-  {
-    "id": "p9",
-    "title": "Great Barrier Reef",
-    "image": {
-      "src": "great-barrier-reef.jpg",
-      "alt": "Vibrant coral formations of the Great Barrier Reef underwater."
-    },
-    "lat": -18.2871,
-    "lon": 147.6992
-  },
-  {
-    "id": "p10",
-    "title": "Parisian Streets",
-    "image": {
-      "src": "parisian-streets.jpg",
-      "alt": "Charming streets of Paris with historic buildings and cafes."
-    },
-    "lat": 48.8566,
-    "lon": 2.3522
-  },
-  {
-    "id": "p11",
-    "title": "Grand Canyon",
-    "image": {
-      "src": "grand-canyon.jpg",
-      "alt": "Expansive view of the deep gorges and ridges of the Grand Canyon."
-    },
-    "lat": 36.1069,
-    "lon": -112.1129
-  },
-  {
-    "id": "p12",
-    "title": "Venetian Canals",
-    "image": {
-      "src": "venetian-canals.jpg",
-      "alt": "Glistening waters of the Venetian canals as gondolas glide by at sunset."
-    },
-    "lat": 45.4408,
-    "lon": 12.3155
-  },
-  {
-    "id": "p13",
-    "title": "Taj Mahal",
-    "image": {
-      "src": "taj-mahal.jpg",
-      "alt": "The iconic Taj Mahal reflecting in its surrounding waters during sunrise."
-    },
-    "lat": 27.1751,
-    "lon": 78.0421
-  },
-  {
-    "id": "p14",
-    "title": "Kerala Backwaters",
-    "image": {
-      "src": "kerala-backwaters.jpg",
-      "alt": "Tranquil waters and lush greenery of the Kerala backwaters."
-    },
-    "lat": 9.4981,
-    "lon": 76.3388
-  },
-  {
-    "id": "p15",
-    "title": "African Savanna",
-    "image": {
-      "src": "african-savanna.jpg",
-      "alt": "Wild animals roaming freely in the vast landscapes of the African savanna."
-    },
-    "lat": -2.153,
-    "lon": 34.6857
-  },
-  {
-    "id": "p16",
-    "title": "Victoria Falls",
-    "image": {
-      "src": "victoria-falls.jpg",
-      "alt": "The powerful cascade of Victoria Falls, a natural wonder between Zambia and Zimbabwe."
-    },
-    "lat": -17.9243,
-    "lon": 25.8572
-  },
-  {
-    "id": "p17",
-    "title": "Machu Picchu",
-    "image": {
-      "src": "machu-picchu.jpg",
-      "alt": "The historic Incan citadel of Machu Picchu illuminated by the morning sun."
-    },
-    "lat": -13.1631,
-    "lon": -72.545
-  },
-  {
-    "id": "p18",
-    "title": "Amazon River",
-    "image": {
-      "src": "amazon-river.jpg",
-      "alt": "Navigating the waters of the Amazon River, surrounded by dense rainforest."
-    },
-    "lat": -3.4653,
-    "lon": -58.38
+    "id": 7,
+    "place_name": "Shinjuku Gyoen National Garden",
+    "description": "Beautiful landscaped garden blending Japanese, English, and French styles, perfect for picnics.",
+    "neighborhood": "Shinjuku",
+    "recommended_duration_hours": 2,
+    "best_for": ["families", "nature lovers", "photography"],
+    "ticket_price_yen": 500,
+    "opening_hours": "09:00-17:00",
+    "nearby_transport": ["Shinjuku-gyoenmae Station"]
   }
 ]
