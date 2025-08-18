@@ -75,5 +75,82 @@
     "ticket_price_yen": 500,
     "opening_hours": "09:00-17:00",
     "nearby_transport": ["Shinjuku-gyoenmae Station"]
+  },
+  {
+    "id": 8,
+    "place_name": "Tokyo Tower",
+    "description": "Iconic landmark and observation deck offering panoramic views of the city with a bright atmosphere.",
+    "neighborhood": "Minato",
+    "recommended_duration_hours": 1.5,
+    "best_for": ["families", "sightseeing", "photography"],
+    "ticket_price_yen": 1500,
+    "opening_hours": "09:00-23:00",
+    "nearby_transport": ["Akabanebashi Station"]
+  },
+  {
+    "id": 9,
+    "place_name": "Meiji Jingu",
+    "description": "One of the Shinto shrines in Japan, surrounded by a forest and greenery despite being in the middle of the megacity.",
+    "neighborhood": "Harajuku",
+    "recommended_duration_hours": 1.5,
+    "best_for": ["families", "photography", "nature lovers"],
+    "ticket_price_yen": 0,
+    "opening_hours": "06:00-17:30",
+    "nearby_transport": ["Harajuku Station"]
+  },
+  {
+    "id": 10,
+    "place_name": "Shibuya Scramble Crossing",
+    "description": "Shibuya Crossing is one of the world's busiest pedestrian crossings, surrounded by a vibrant atmosphere and unique fashion scene.",
+    "neighborhood": "Shibuya",
+    "recommended_duration_hours": 2,
+    "best_for": ["photography", "shopping", "teens"],
+    "ticket_price_yen": 0,
+    "opening_hours": "00:00-23:59",
+    "nearby_transport": ["Shibuya Station"]
+  },
+  {
+    "id": 11,
+    "place_name": "Takeshita Street",
+    "description": "Vibrant, pedestrian-only street known for its eclectic fashion, street food, and pop culture.",
+    "neighborhood": "Harajuku",
+    "recommended_duration_hours": 2,
+    "best_for": ["shopping", "teens", "animation lovers"],
+    "ticket_price_yen": 0,
+    "opening_hours": "00:00-23:59",
+    "nearby_transport": ["Harajuku Station"]
+  },
+  {
+    "id": 12,
+    "place_name": "Tokyo National Museum",
+    "description": "One of the largest collections of art and acheological artifacts in Japan.",
+    "neighborhood": "Ueno",
+    "recommended_duration_hours": 2,
+    "best_for": ["culture lovers", "art lovers", "photography"],
+    "ticket_price_yen": 1000,
+    "opening_hours": "09:30-17:00",
+    "nearby_transport": ["Ueno Station"]
+  },
+  {
+    "id": 13,
+    "place_name": "Tsukiji Outer Market",
+    "description": "Popular destination containing retail markets, restaurants, fresh seafood, and Japanese traditional food.",
+    "neighborhood": "Tsukiji",
+    "recommended_duration_hours": 1.5,
+    "best_for": ["families", "food lovers", "culture lovers"],
+    "ticket_price_yen": 0,
+    "opening_hours": "05:00-14:00",
+    "nearby_transport": ["Tsukiji Shijo Station"]
+  },
+  {
+    "id": 14,
+    "place_name": "Koishikawa Korakuen Garden",
+    "description": "Charming Japanese-style landscape garden in the heart of Tokyo, and is one of the city's oldest landscape gardens.",
+    "neighborhood": "Bunkyo",
+    "recommended_duration_hours": 1.5,
+    "best_for": ["relaxation", "nature lovers", "photography"],
+    "ticket_price_yen": 300,
+    "opening_hours": "09:00-17:00",
+    "nearby_transport": ["Suidobashi Station"]
   }
 ]
