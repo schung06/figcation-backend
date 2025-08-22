@@ -1,1 +1,81 @@
-<p> recommendations here</p>
+<div class="recommendations">
+
+    <!-- OVERVIEW PAGE -->
+    <ng-container *ngIf="activePage === 'overview'">
+        <h2>Recommendations</h2>
+
+        <!-- Restaurants Section -->
+        <h3>Restaurants</h3>
+        <div class="scroll-wrapper">
+            <button class="scroll-btn left" (click)="scrollLeft('restaurants')">‹</button>
+            <div class="horizontal-scroll" #restaurantsScroll>
+                <div class="card" *ngFor="let r of restaurants" (click)="goToPage('restaurants')">
+                    <div class="thumbnail"></div>
+                    <div class="card-info">
+                        <p class="title">{{ r.name }}</p>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-btn right" (click)="scrollRight('restaurants')">›</button>
+        </div>
+
+        <!-- Activities Section -->
+        <h3>Activities</h3>
+        <div class="scroll-wrapper">
+            <button class="scroll-btn left" (click)="scrollLeft('activities')">‹</button>
+            <div class="horizontal-scroll" #activitiesScroll>
+                <div class="card" *ngFor="let r of activities" (click)="goToPage('activities')">
+                    <div class="thumbnail"></div>
+                    <div class="card-info">
+                        <p class="title">{{ r.name }}</p>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-btn right" (click)="scrollRight('activities')">›</button>
+        </div>
+    </ng-container>
+
+    <!-- RESTAURANTS PAGE -->
+    <ng-container *ngIf="activePage === 'restaurants'">
+        <button (click)="backToOverview()">← Back</button>
+        <h2>Restaurants</h2>
+
+        <div class="filters">
+            <span
+                *ngFor="let tag of ['Kid friendly','Stroller accessible','High chairs','Coloring sheets','Amazing Food','Air-conditioned']"
+                class="chip">
+                {{ tag }}
+            </span>
+        </div>
+
+        <div class="restaurant-list">
+            <div class="restaurant-card" *ngFor="let r of restaurants">
+                <div class="thumbnail"></div>
+                <div class="info">
+                    <h3>{{ r.name }}</h3>
+                    <p>{{ r.rating }} ★ ({{ r.reviews }})</p>
+                    <div class="tags">
+                        <span *ngFor="let t of r.tags" class="chip">{{ t }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- ACTIVITIES PAGE -->
+    <ng-container *ngIf="activePage === 'activities'">
+        <button (click)="backToOverview()">← Back</button>
+        <h2>Activities</h2>
+
+        <div class="activity-list">
+            <div class="activity-card" *ngFor="let a of activities">
+                <div class="thumbnail"></div>
+                <div class="info">
+                    <h3>{{ a.name }}</h3>
+                    <p>{{ a.rating }} ★ ({{ a.reviews }})</p>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+</div>
