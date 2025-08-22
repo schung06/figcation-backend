@@ -1,0 +1,86 @@
+.trips-home {
+    padding: 1rem;
+    position: relative;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    .tabs {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+
+        button {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            color: gray;
+
+            &.active {
+                font-weight: bold;
+                color: black;
+            }
+        }
+    }
+
+    .trip-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .trip-card {
+        background: #f1f1f1;
+        border-radius: 10px;
+        padding: 1rem;
+        position: relative;
+
+        .thumbnail {
+            background: #ddd;
+            height: 100px;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #444;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+        }
+
+        .participants {
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+
+            .more {
+                font-size: 0.9rem;
+                color: #333;
+            }
+        }
+    }
+
+    .fab {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: #555;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+}

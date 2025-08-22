@@ -1,0 +1,33 @@
+<div class="trips-home">
+    <h2>My Trips</h2>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button [class.active]="activeTab === 'current'" (click)="switchTab('current')">
+            ● current trips
+        </button>
+        <button [class.active]="activeTab === 'old'" (click)="switchTab('old')">
+            ○ old trips
+        </button>
+    </div>
+    <hr />
+
+    <!-- Trip Cards -->
+    <div class="trip-grid">
+        <div class="trip-card" *ngFor="let trip of trips">
+            <div class="thumbnail"></div>
+            <h3>{{ trip.destination }}</h3>
+            <p>{{ trip.startDate }} - {{ trip.endDate }}</p>
+            <span class="badge">{{ trip.daysAway }} days away</span>
+
+            <div class="participants">
+                <span *ngFor="let i of [].constructor(3)">⚪</span>
+                <span class="more">+{{ trip.participants }}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Add Button -->
+    <button class="fab" (click)="addTrip()">＋</button>
+</div>
+
