@@ -1,0 +1,215 @@
+.frame-child {
+    width: 52.4px;
+    position: relative;
+    border-radius: 9.52px;
+    background-color: #d9d9d9;
+    height: 52.4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 0;
+}
+
+.frame-item {
+    width: 52.4px;
+    position: relative;
+    border-radius: 9.52px;
+    background-color: #d9d9d9;
+    height: 52.4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.frame-inner {
+    width: 52.4px;
+    position: relative;
+    border-radius: 9.52px;
+    background-color: #d9d9d9;
+    height: 52.4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.frame-div {
+    align-self: stretch;
+    position: relative;
+    border-radius: 11.27px;
+    border: 5.3px solid rgba(88, 122, 155, 0.65);
+    box-sizing: border-box;
+    height: 72.6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+.frame-child1 {
+    width: 52.4px;
+    position: absolute;
+    margin: 0 !important;
+    top: 248px;
+    left: 5px;
+    border-radius: 9.52px;
+    background-color: #d9d9d9;
+    height: 52.4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 4;
+}
+
+.frame-group {
+    position: absolute;
+    top: 86px;
+    left: 25%;
+    width: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 29px;
+}
+
+.icround-plus-icon {
+    position: absolute;
+    top: 770px;
+    left: 35%;
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+}
+
+.ellipse-div {
+    position: absolute;
+    top: 16px;
+    left: 35%;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 42px;
+    height: 42px;
+}
+
+.frame-parent {
+    position: absolute;
+    height: 100%;
+    width: 47.34%;
+    top: 0%;
+    right: 52.66%;
+    bottom: 0%;
+    left: 0%;
+    background-color: #203e5b;
+    overflow: hidden;
+}
+
+.frame-icon {
+    width: 38.2px;
+    position: relative;
+    border-radius: 6.94px;
+    height: 38.2px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.home {
+    width: 56px;
+    position: relative;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.mingcutecalendar-line-icon {
+    width: 33px;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.itinerary {
+    width: 70px;
+    position: relative;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.mingcutecalendar-line-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.fluentsparkle-16-regular-icon {
+    width: 32px;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.recs {
+    align-self: stretch;
+    position: relative;
+    line-height: 24px;
+}
+
+.fluentwhiteboard-16-regular-icon {
+    width: 38px;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.playground {
+    width: 96px;
+    position: relative;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.fluentpoll-16-regular-icon {
+    width: 26px;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.games {
+    width: 68px;
+    position: relative;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.frame-container {
+    position: absolute;
+    top: 57px;
+    left: 30%;
+    width: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.navigation-bar-inner {
+    position: absolute;
+    height: 100%;
+    width: 52.66%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 47.34%;
+    background-color: #446585;
+    overflow: hidden;
+}
+
+.navigation-bar {
+    width: 15%;
+    position: relative;
+    height: 832px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Public Sans';
+}
