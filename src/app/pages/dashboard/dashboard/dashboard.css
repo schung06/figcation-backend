@@ -1,12 +1,39 @@
-.dashboard-container {
+body {
+    background-color: #446585;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*.dashboard-container {
+    position: fixed;
     display: flex;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     background-color: #446585;
+    overflow: auto;
+}*/
+
+.dashboard-container {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    width: calc(100vw - 90px);
+    height: 100vh;
+    background-color: #f2f9ff;
+    overflow: auto;
+    margin-left: 250px;
+    border-radius: 18px;
+
 }
 
 app-nav-bar {
-    position: relative;
+    top: 0;
+    left: 0;
+    position: fixed;
     width: 100%;
     flex-shrink: 0;
     height: 100vh;
@@ -16,12 +43,12 @@ app-nav-bar {
 .dashboard-content {
     background-color: #446585;
     position: absolute;
-    /* or fixed, depending on your needs */
-    top: 50px;
-    left: 250px;;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     z-index: 2;
+    overflow: auto;
 }
 
 .planning-trip-name {
@@ -50,8 +77,8 @@ app-nav-bar {
 
 .frame-child {
     position: absolute;
-    bottom: 773px;
-    left: 986px;
+    top: 25px;
+    left: 68%;
     border-radius: 50%;
     background-color: #d9d9d9;
     width: 49px;
