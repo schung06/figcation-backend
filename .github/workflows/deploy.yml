@@ -30,11 +30,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Angular app (static SPA)
+      - name: Build Angular SPA (browser-only)
         run: |
           REPO_NAME=${GITHUB_REPOSITORY#*/}
-          # Build the browser-only SPA
-          npx ng build figcation --configuration production --base-href "/$REPO_NAME/"
+          # Explicitly build the browser-only static SPA
+          npx ng run figcation:build:production \
+            --output-path=dist/figcation/browser \
+            --base-href "/$REPO_NAME/"
 
       - name: Copy index.html to 404.html for SPA routing
         run: cp dist/figcation/browser/index.html dist/figcation/browser/404.html

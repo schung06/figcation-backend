@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "outputMode": "static",
             "outputPath": "dist/figcation/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
