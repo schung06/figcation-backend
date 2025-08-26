@@ -35,8 +35,12 @@ jobs:
           REPO_NAME=${GITHUB_REPOSITORY#*/}
           # Detect default project name
           PROJECT_NAME=$(jq -r '.defaultProject' angular.json)
-          # Get Angular build output folder
+          echo "Default project: $PROJECT_NAME"
+          # Get Angular build output folder (robust for Angular 17+)
+          DIST_FOLDER=$(jq -r ".projects.\"$PROJECT_NAME\".targets.build.options.outputPath" angular.json)
+          if [ "$DIST_FOLDER" = "null" ]; then
           DIST_FOLDER=$(jq -r ".projects.\"$PROJECT_NAME\".architect.build.options.outputPath" angular.json)
+          fi
           echo "Dist folder: $DIST_FOLDER"
           # Build Angular app
           npm run build -- --configuration production --output-path=$DIST_FOLDER --base-href "/$REPO_NAME/"
