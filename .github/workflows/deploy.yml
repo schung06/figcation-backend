@@ -35,7 +35,7 @@ jobs:
           npm run build -- --output-path=$DIST_FOLDER --base-href=$BASE_HREF
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v3.9.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ steps.project.outputs.project_name }}
