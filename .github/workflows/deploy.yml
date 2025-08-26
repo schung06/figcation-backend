@@ -3,7 +3,7 @@ name: Deploy Angular App to GitHub Pages
 on:
   push:
     branches:
-      - main   # or "master" if that's your default branch
+      - main
 
 permissions:
   contents: read
@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --configuration production
+        run: ng build --configuration production
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
@@ -40,7 +40,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
