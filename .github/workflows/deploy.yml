@@ -2,7 +2,7 @@ name: Deploy Angular app to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # or your default branch
+    branches: ["main"]  
   workflow_dispatch:
 
 permissions:
@@ -31,15 +31,21 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm run build -- --configuration production --base-href "/figcation-backend/"
+        run: |
+          REPO_NAME=${GITHUB_REPOSITORY#*/}
+          # Build Angular app for GitHub Pages
+          npm run build -- \
+          --configuration production \
+          --output-path=dist/figcation/browser \
+          --base-href "/$REPO_NAME/"
 
       - name: Copy index.html to 404.html for SPA routing
-        run: cp dist/http/browser/index.html dist/http/browser/404.html
+        run: cp dist/figcation/browser/index.html dist/figcation/browser/404.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/http/browser
+          path: dist/figcation/browser
 
   deploy:
     environment:
