@@ -33,24 +33,19 @@ jobs:
       - name: Build Angular app
         run: |
           REPO_NAME=${GITHUB_REPOSITORY#*/}
-          # Detect default project name
-          PROJECT_NAME=$(jq -r '.defaultProject' angular.json)
-          echo "Default project: $PROJECT_NAME"
-          # Get Angular build output folder (robust for Angular 17+)
-          DIST_FOLDER=$(jq -r ".projects.\"$PROJECT_NAME\".targets.build.options.outputPath" angular.json)
-          if [ "$DIST_FOLDER" = "null" ]; then
-          DIST_FOLDER=$(jq -r ".projects.\"$PROJECT_NAME\".architect.build.options.outputPath" angular.json)
-          fi
-          echo "Dist folder: $DIST_FOLDER"
-          # Build Angular app
-          npm run build -- --configuration production --output-path=$DIST_FOLDER --base-href "/$REPO_NAME/"
-          # Copy index.html to 404.html for SPA routing
-          cp "$DIST_FOLDER/index.html" "$DIST_FOLDER/404.html"
+          # Build Angular app for GitHub Pages
+          npm run build -- \
+          --configuration production \
+          --output-path=dist/figcation/browser \
+          --base-href "/$REPO_NAME/"
+
+      - name: Copy index.html to 404.html for SPA routing
+        run: cp dist/figcation/browser/index.html dist/figcation/browser/404.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: $DIST_FOLDER
+          path: dist/figcation/browser
 
   deploy:
     environment:
