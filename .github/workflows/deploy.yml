@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: ng build --configuration production
+        run: npx ng build --configuration production
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
