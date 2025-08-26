@@ -26,6 +26,7 @@
             ],
             "server": "src/main.server.ts",
             "outputMode": "static",
+            "outputPath": "dist/figcation/browser",
             "ssr": {
               "entry": "src/server.ts"
             }
