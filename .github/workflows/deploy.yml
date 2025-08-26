@@ -31,15 +31,22 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm run build -- --configuration production --base-href "/figcation-backend/"
-
-      - name: Copy index.html to 404.html for SPA routing
-        run: cp dist/http/browser/index.html dist/http/browser/404.html
+        run: |
+          REPO_NAME=${GITHUB_REPOSITORY#*/}
+          # Detect default project name
+          PROJECT_NAME=$(jq -r '.defaultProject' angular.json)
+          # Get Angular build output folder
+          DIST_FOLDER=$(jq -r ".projects.\"$PROJECT_NAME\".architect.build.options.outputPath" angular.json)
+          echo "Dist folder: $DIST_FOLDER"
+          # Build Angular app
+          npm run build -- --configuration production --output-path=$DIST_FOLDER --base-href "/$REPO_NAME/"
+          # Copy index.html to 404.html for SPA routing
+          cp "$DIST_FOLDER/index.html" "$DIST_FOLDER/404.html"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/http/browser
+          path: $DIST_FOLDER
 
   deploy:
     environment:
