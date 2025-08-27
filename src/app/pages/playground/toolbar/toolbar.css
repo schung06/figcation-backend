@@ -1,21 +1,23 @@
 .frame-parent {
-    width: 100%;
-    position: relative;
-    border-radius: 18px;
-    background-color: #fbfdff;
-    height: 54px;
-    overflow: hidden;
+    display: inline-flex;
+        align-items: center;
+        border-radius: 18px;
+        background-color: #fbfdff;
+        padding: 8px 14px;
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+        height: auto;
+        position: absolute;
+        top: 85%;
+        left: 30%;
+        z-index: 1000;
 }
 
 .frame-group {
-    position: absolute;
-    top: 8px;
-    left: 29px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 37px;
+    gap: 20px;
 }
 
 .vector-parent {
