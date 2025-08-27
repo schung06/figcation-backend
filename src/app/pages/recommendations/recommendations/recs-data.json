@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Taco Stand",
+    "location": "La Jolla, CA",
+    "price": "$",
+    "image": "assets/taco-stand.jpg"
+  },
+  {
+    "title": "Morning Glory",
+    "location": "San Diego, CA",
+    "price": "$$",
+    "image": "assets/morning-glory.jpg"
+  },
+  {
+    "title": "Oscar's Mexican Seafood",
+    "location": "Location",
+    "price": "$$",
+    "image": "assets/oscar-mexican-seafood.jpg"
+  },
+  {
+    "title": "San Diego Zoo",
+    "location": "San Diego, CA",
+    "price": "$$",
+    "image": "assets/san-diego-zoo.jpg"
+  },
+  {
+    "title": "Balboa Park",
+    "location": "San Diego, CA",
+    "price": "$",
+    "image": "assets/balboa-park.jpg"
+  },
+  {
+    "title": "Hotel Del Coronado",
+    "location": "Coronado, CA",
+    "price": "$$$",
+    "image": "assets/hotel-del-coronado.jpg"
+  }
+]

@@ -1,0 +1,78 @@
+.recommendation-card {
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    height: 416px;
+    overflow: hidden;
+    background-image: url('recommendation card.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: 24px;
+    color: #000;
+    font-family: 'Public Sans';
+}
+
+.line-mdheart-twotone-icon {
+    position: absolute;
+    top: 30px;
+    left: 334px;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+}
+
+.frame-parent {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #fff;
+    width: 412px;
+    height: 136px;
+    overflow: hidden;
+}
+
+.restaurant-parent {
+    position: absolute;
+    top: 24px;
+    left: 28px;
+    width: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.restaurant {
+    position: relative;
+    line-height: 28px;
+}
+
+.location-parent {
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 18px;
+}
+
+.location {
+    position: relative;
+    line-height: 24px;
+}
+
+.frame-child {
+    position: absolute;
+    top: 58px;
+    left: 331px;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    object-fit: cover;
+}
