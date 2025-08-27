@@ -1,0 +1,168 @@
+<body>
+    <div class="calendar-container">
+        <!-- Navigation Bar Component -->
+        <app-nav-bar />
+
+        <div class="calendar-content">
+            <!-- Calendar Content -->
+
+            <div class="frame-parent">
+                <div class="vector-parent">
+                    <img class="frame-child" alt="" src="Vector 1.svg">
+                    <div class="ideas-parent">
+                        <div class="ideas">Ideas</div>
+                        <img class="frame-item" alt="" src="assets/assets/down-arrow.png">
+                    </div>
+                    <div class="frame-group">
+                        <div class="polygon-parent">
+                            <img class="frame-inner" alt="" src="assets/assets/triangle-arrow-down.png">
+                            <div class="food-wrapper">
+                                <div class="food">Food</div>
+                            </div>
+                        </div>
+                            <div class="frame-container">
+                                <div class="frame-wrapper" *ngFor="let restaurant of sushiRestaurants">
+                                    <div class="frame-div">
+                                        <img class="frame-icon" alt="" src="assets/assets/mdi-account.svg">
+                                        <div class="sushi-restaurant">{{ restaurant }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="frame-parent4">
+                        <div class="polygon-parent">
+                            <img class="frame-inner" alt="" src="assets/assets/triangle-arrow-down.png">
+                            <div class="hotels-wrapper">
+                                <div class="food">Hotels</div>
+                            </div>
+                        </div>
+                        <div class="frame-parent5">
+                            <div class="frame-wrapper" *ngFor="let hotel of hiltonHotels">
+                                <div class="frame-div">
+                                    <img class="frame-icon" alt="" src="assets/assets/mdi-account.svg">
+                                    <div class="sushi-restaurant">{{ hotel }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frame-parent10">
+                        <div class="polygon-parent">
+                            <img class="frame-inner" alt="" src="assets/assets/triangle-arrow-down.png">
+                            <div class="activities-wrapper">
+                                <div class="food">Activities</div>
+                            </div>
+                        </div>
+                        <div class="frame-container">
+                            <div class="frame-wrapper" *ngFor="let activity of activities">
+                                <div class="frame-div">
+                                    <img class="frame-icon" alt="" src="assets/assets/mdi-account.svg">
+                                    <div class="sushi-restaurant">{{ activity }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="am-parent">
+                    <div class="am">10 AM</div>
+                    <div class="am">11 AM</div>
+                    <div class="am">12 PM</div>
+                    <div class="am">1 PM</div>
+                </div>
+                <div class="line-parent">
+                    <div class="line-div">
+                    </div>
+                    <div class="line-div">
+                    </div>
+                    <div class="line-div">
+                    </div>
+                    <div class="line-div">
+                    </div>
+                    <div class="line-div">
+                    </div>
+                    <div class="line-div">
+                    </div>
+                    <div class="line-div">
+                    </div>
+                    <div class="line-div">
+                    </div>
+                </div>
+                <div class="line-group">
+                    <div class="frame-child20">
+                    </div>
+                    <div class="frame-child20">
+                    </div>
+                    <div class="frame-child20">
+                    </div>
+                    <div class="frame-child20">
+                    </div>
+                    <div class="frame-child20">
+                    </div>
+                </div>
+                <div class="event-name-parent">
+                    <div class="event-name">Event Name</div>
+                    <div class="pm2">10 - 11:45 PM</div>
+                    <div class="location">Location</div>
+                    <img class="group-icon" alt="" src="Group 24.svg">
+                </div>
+                <div class="pst-parent">
+                    <div class="pst">PST</div>
+                    <div class="mon-17-parent">
+                        <div class="mon-17">Mon 17</div>
+                        <div class="tues-18">Tues 18</div>
+                        <div class="tues-18">Wed 19</div>
+                        <div class="tues-18">Thu 20</div>
+                    </div>
+                </div>
+                <div class="frame-parent16">
+                    <div class="tablercalendar-filled-parent">
+                        <img class="tablercalendar-filled-icon" alt="" src="tabler:calendar-filled.svg">
+                        <div class="calendar">Calendar</div>
+                    </div>
+                    <img class="vector-icon" alt="" src="Vector 2.svg">
+                    <div class="fluent-mdl2world-parent">
+                        <img class="fluent-mdl2world-icon" alt="" src="fluent-mdl2:world.svg">
+                        <div class="map">Map</div>
+                    </div>
+                    <img class="vector-icon" alt="" src="Vector 3.svg">
+                    <div class="material-symbolslist-rounded-parent">
+                        <img class="material-symbolslist-rounded-icon" alt="" src="material-symbols:list-rounded.svg">
+                        <div class="list">List</div>
+                    </div>
+                </div>
+                <div class="event-name-group">
+                    <div class="event-name">Event Name</div>
+                    <div class="pm2">10 - 11:45 PM</div>
+                    <div class="location">Location</div>
+                    <img class="group-icon" alt="" src="Group 24.svg">
+                </div>
+                <div class="event-name-container">
+                    <div class="event-name">Event Name</div>
+                    <div class="pm2">10 - 11:00 AM</div>
+                    <div class="location">Location</div>
+                    <img class="group-icon" alt="" src="Group 24.svg">
+                </div>
+                <div class="event-name-parent1">
+                    <div class="event-name">Event Name</div>
+                    <div class="pm2">10 - 11:00 AM</div>
+                    <div class="location">Location</div>
+                    <img class="group-icon" alt="" src="Group 24.svg">
+                </div>
+                <div class="frame-parent17">
+                    <div class="august-2025-wrapper">
+                        <div class="august-2025">August 2025</div>
+                    </div>
+                    <div class="weuiarrow-outlined-parent">
+                        <img class="weuiarrow-outlined-icon" alt="" src="assets/assets/weui-arrow-outlined-left.svg">
+                        <img class="weuiarrow-outlined-icon1" alt="" src="assets/assets/weui-arrow-outlined-right.svg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>

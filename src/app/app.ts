@@ -4,10 +4,11 @@ import { Recommendations } from "./pages/recommendations/recommendations/recomme
 import { TripsComponent } from "./pages/trips/trips";
 import { NavBar } from "./nav-bar/nav-bar";
 import { Dashboard } from "./pages/dashboard/dashboard/dashboard";
+import { Calendar } from "./pages/calendar/calendar";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Recommendations, TripsComponent, NavBar, Dashboard],
+  imports: [RouterOutlet, Recommendations, TripsComponent, NavBar, Dashboard, Calendar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
