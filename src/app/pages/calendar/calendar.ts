@@ -19,15 +19,15 @@ export class Calendar {
 
   hiltonHotels = [
     'Hilton',
-    'Hilton',
-    'Hilton',
-    'Hilton'
+    'Marriott',
+    'Hyatt',
+    'Holiday Inn'
   ];
 
   activities = [
     'Hiking',
-    'Hiking',
-    'Hiking',
-    'Hiking'
+    'Snorkeling',
+    'Museum',
+    'Shopping'
   ];
 }
