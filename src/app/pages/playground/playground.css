@@ -1,5 +1,529 @@
 body {
-    background-color: #f0f0f0;
-    background-image: radial-gradient(circle, #333 1px, transparent 1px);
-    background-size: 20px 20px;
+    background-color: #446585;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
 }
+
+app-nav-bar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    flex-shrink: 0;
+    height: 100vh;
+    z-index: 1;
+}
+
+.playground-container {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    width: calc(100vw - 90px);
+    height: 100vh;
+    background-color: #f2f9ff;
+    overflow: auto;
+    margin-left: 250px;
+    border-radius: 18px;
+
+}
+
+.playground-content {
+    background-color: #F2F9FF;
+    background-image: radial-gradient(circle, #C9DCEF 2px, transparent 1px);
+    background-size: 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    overflow: auto;
+}
+
+.group-parent1 {
+    width: 100%;
+    position: relative;
+    border-radius: 7px;
+    background-color: #e0fdff;
+    border: 1px solid #46c2cb;
+    box-sizing: border-box;
+    height: 306px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 10px;
+    color: #b9e6ff;
+    font-family: 'Public Sans';
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 80px;
+    left: 65px;
+    width: 154px;
+    height: 183px;
+    display: flex;
+}
+
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #b9e6ff;
+    width: 154px;
+    height: 183px;
+}
+
+.beach {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    font-size: 14px;
+    display: inline-block;
+    font-family: Poppins;
+    color: #203e5b;
+    width: 98px;
+    height: 29px;
+}
+
+.outdoors-wrapper {
+    position: absolute;
+    top: 37px;
+    left: 13px;
+    border-radius: 9px;
+    background-color: #40b8fb;
+    border: 1px solid #40b8fb;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 6px;
+}
+
+.outdoors {
+    position: relative;
+    font-weight: 500;
+}
+
+.kid-friendly-wrapper {
+    position: absolute;
+    top: 37px;
+    left: 76px;
+    border-radius: 9px;
+    background-color: #40b8fb;
+    border: 1px solid #40b8fb;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 6px;
+    font-family: Inter;
+}
+
+.kid-friendly-container {
+    position: absolute;
+    top: 37px;
+    left: 76px;
+    border-radius: 9px;
+    background-color: #40b8fb;
+    border: 1px solid #40b8fb;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 6px;
+}
+
+.free-wrapper {
+    position: absolute;
+    top: 60px;
+    left: 13px;
+    border-radius: 9px;
+    background-color: #40b8fb;
+    border: 1px solid #40b8fb;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 6px;
+}
+
+.jane-doe {
+    position: absolute;
+    top: 161px;
+    left: 100px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #203e5b;
+}
+
+.group-item {
+    position: absolute;
+    top: 60px;
+    left: 53px;
+    border-radius: 9px;
+    width: 17px;
+    height: 17px;
+    overflow: hidden;
+}
+
+.pb-beach-la-container {
+    position: absolute;
+    top: 95px;
+    left: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #203e5b;
+}
+
+.pb-beach-la-jolla-shores-wind {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 16px;
+}
+
+.pb-beach {
+    margin-bottom: 0px;
+}
+
+.rectangle-group {
+    position: absolute;
+    top: 80px;
+    left: 267px;
+    width: 154px;
+    height: 183px;
+}
+
+.rectangle-container {
+    position: absolute;
+    top: 80px;
+    left: 469px;
+    width: 154px;
+    height: 183px;
+}
+
+.kid-friendly-activities-wrapper {
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    border-radius: 8px;
+    background-color: #203e5b;
+    width: 128px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 2px;
+    box-sizing: border-box;
+    color: #e0fdff;
+    font-family: Poppins;
+}
+
+/* Hotels section */
+.hotels-section {
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    background-color: #ffefe4;
+    border: 1px solid #ff9f5f;
+    box-sizing: border-box;
+    height: 288px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 10px;
+    color: #203e5b;
+    font-family: 'Public Sans';
+}
+
+.vector-parent {
+    position: absolute;
+    top: 47px;
+    left: 35px;
+    width: 154px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 13px;
+}
+
+.frame-child {
+    width: 154px;
+    position: relative;
+    height: 172px;
+    z-index: 0;
+}
+
+.frame-group {
+    width: 154px;
+    border-radius: 7px;
+    background-color: #ffa9a3;
+    height: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 7px;
+    box-sizing: border-box;
+    z-index: 1;
+    font-family: Inter;
+}
+
+.ellipse-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.frame-item {
+    width: 15.4px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #ed6364;
+    height: 15.4px;
+}
+
+.frame-inner {
+    width: 17.7px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #ed6364;
+    border: 1.2px solid #ffa9a3;
+    box-sizing: border-box;
+    height: 17.7px;
+    margin-left: -3.5px;
+}
+
+.frame-wrapper {
+    width: 127px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: -20px;
+    position: relative;
+}
+
+.replies-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.replies {
+    position: relative;
+    font-weight: 500;
+}
+
+.weuiarrow-outlined-icon {
+    width: 17px;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.hilton {
+    width: 98px;
+    position: absolute;
+    margin: 0 !important;
+    top: 11px;
+    left: 13px;
+    font-size: 14px;
+    display: inline-block;
+    font-family: Poppins;
+    height: 29px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.john-doe {
+    width: 48px;
+    position: absolute;
+    margin: 0 !important;
+    top: 127px;
+    left: 93px;
+    font-weight: 500;
+    font-family: Poppins;
+    display: inline-block;
+    height: 15px;
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+.write-something {
+    width: 103px;
+    position: absolute;
+    margin: 0 !important;
+    top: 72px;
+    left: 11px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(32, 62, 91, 0.4);
+    display: inline-block;
+    height: 14px;
+    flex-shrink: 0;
+    z-index: 4;
+}
+
+.frame-container {
+    margin: 0 !important;
+    position: absolute;
+    top: 107px;
+    left: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    z-index: 5;
+    color: #ffa9a3;
+}
+
+.mdiheart-parent {
+    border-radius: 8.28px;
+    background-color: #ed6364;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2.2px 4px;
+    gap: 4px;
+}
+
+.mdiheart-icon {
+    width: 11.7px;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.flowbitethumbs-up-solid-parent {
+    border-radius: 7.68px;
+    background-color: #ed6364;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px 4px;
+    gap: 2.2px;
+}
+
+.flowbitethumbs-up-solid-icon {
+    width: 12px;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.pool-wrapper {
+    margin: 0 !important;
+    position: absolute;
+    top: 36px;
+    left: 14px;
+    border-radius: 9px;
+    background-color: #ed6364;
+    border: 1px solid #ed6364;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 6px;
+    z-index: 6;
+    color: #ffa9a3;
+}
+
+.frame-icon {
+    width: 17px;
+    margin: 0 !important;
+    position: absolute;
+    top: 37px;
+    left: 54px;
+    border-radius: 9px;
+    height: 17px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 7;
+}
+
+.cheap-hotelsairbnb-wrapper {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    border-radius: 8px;
+    background-color: #203e5b;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 4px;
+    color: #e0fdff;
+    font-family: Poppins;
+}
+
+.frame-parent {
+  	width: 100%;
+  	position: relative;
+  	border-radius: 10px;
+  	background-color: #ffe8fe;
+  	border: 1px solid #ff93fa;
+  	box-sizing: border-box;
+  	height: 305px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 10px;
+  	color: #203e5b;
+  	font-family: 'Public Sans';
+}
+.group-parent {
+  	position: absolute;
+  	top: 62px;
+  	left: 49px;
+  	width: 154px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 9px;
+}
+.vector-parent {
+  	width: 154px;
+  	position: relative;
+  	height: 172px;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 154px;
+  	height: 172px;
+}
+.museum {
+  	position: absolute;
+  	top: 11px;
+  	left: 13px;
+  	font-size: 14px;
+  	display: inline-block;
+  	font-family: Poppins;
+  	width: 98px;
+  	height: 29px;
+}
+
+
+

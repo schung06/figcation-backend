@@ -1,0 +1,99 @@
+.frame-parent {
+    width: 100%;
+    position: relative;
+    border-radius: 18px;
+    background-color: #fbfdff;
+    height: 54px;
+    overflow: hidden;
+}
+
+.frame-group {
+    position: absolute;
+    top: 8px;
+    left: 29px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 37px;
+}
+
+.vector-parent {
+    width: 39px;
+    border-radius: 7px;
+    background-color: #c9dcef;
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 10px;
+}
+
+.vector-icon {
+    width: 20.6px;
+    position: relative;
+    height: 26.6px;
+    z-index: 0;
+}
+
+.frame-child {
+    width: 21px;
+    position: absolute;
+    margin: 0 !important;
+    top: -0.14px;
+    left: 9px;
+    height: 33px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.vector-icon1 {
+    width: 24.6px;
+    position: relative;
+    height: 24.6px;
+}
+
+.vector-icon2 {
+    width: 26px;
+    position: relative;
+    height: 23.1px;
+}
+
+.meteor-iconstext {
+    width: 32.8px;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.magedashboard-fill-parent {
+    border-radius: 11px;
+    background-color: #dfebf6;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 7px;
+    gap: 14px;
+}
+
+.magedashboard-fill-icon {
+    width: 30.5px;
+    border-radius: 8px;
+    height: 31.5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.frame-item {
+    width: 29.5px;
+    border-radius: 8px;
+    height: 29.5px;
+}

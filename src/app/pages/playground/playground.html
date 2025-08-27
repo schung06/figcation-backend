@@ -3,7 +3,83 @@
         <div class="playground-content">
             <!-- Playground Content -->
 
+
+            <!-- Kid-Friendly Activities -->
+            <div class="group-parent1">
+                <div *ngFor="let beach of beaches" class="rectangle-parent">
+                    <div class="group-child"></div>
+                    <b class="beach">{{ beach.name }}</b>
+                    <div class="outdoors-wrapper">
+                        <div class="outdoors">Outdoors</div>
+                    </div>
+                    <div class="kid-friendly-wrapper">
+                        <div class="outdoors">Kid-friendly</div>
+                    </div>
+                    <div class="kid-friendly-container">
+                        <div class="outdoors">Kid-friendly</div>
+                    </div>
+                    <div class="free-wrapper">
+                        <div class="outdoors">Free</div>
+                    </div>
+                    <div class="jane-doe">Jane Doe</div>
+                    <img class="group-item" alt="" src="Frame 65.svg">
+                    <div class="pb-beach-la-container">
+                        <ul class="pb-beach-la-jolla-shores-wind">
+                            <li class="pb-beach" *ngFor="let loc of beach.locations">{{ loc }}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kid-friendly-activities-wrapper">
+                    <div class="outdoors">Kid-friendly Activities</div>
+                </div>
+            </div>
+
+            <!-- Hotels -->
+            <div class="hotels-section">
+                <div class="vector-parent">
+                    <img class="frame-child" alt="" src="Rectangle 76.svg">
+                    <div class="frame-group">
+                        <div class="ellipse-parent">
+                            <div class="frame-item">
+                            </div>
+                            <div class="frame-inner">
+                            </div>
+                        </div>
+                        <div class="frame-wrapper">
+                            <div class="replies-parent">
+                                <div class="replies">2 Replies</div>
+                                <img class="weuiarrow-outlined-icon" alt="" src="weui:arrow-outlined.png">
+                            </div>
+                        </div>
+                    </div>
+                    <b class="hilton">Hilton</b>
+                    <div class="john-doe">John Doe</div>
+                    <div class="write-something">Write something...</div>
+                    <div class="frame-container">
+                        <div class="mdiheart-parent">
+                            <img class="mdiheart-icon" alt="" src="mdi:heart.svg">
+                            <div class="replies">2</div>
+                        </div>
+                        <div class="flowbitethumbs-up-solid-parent">
+                            <img class="flowbitethumbs-up-solid-icon" alt="" src="flowbite:thumbs-up-solid.svg">
+                            <div class="replies">1</div>
+                        </div>
+                    </div>
+                    <div class="pool-wrapper">
+                        <div class="replies">Pool</div>
+                    </div>
+                    <img class="frame-icon" alt="" src="Frame 68.svg">
+                </div>
+                <div class="cheap-hotelsairbnb-wrapper">
+                    <div class="replies">Cheap Hotels/Airbnb</div>
+                </div>
+            </div>
+
+            <!-- Indoor Activities -->
             
+
+
+        <app-toolbar />
 
         </div>
     </div>
