@@ -12,9 +12,9 @@ export class Calendar {
 
   sushiRestaurants = [
     'Sushi Restaurant',
-    'Sushi Restaurant',
-    'Sushi Restaurant',
-    'Sushi Restaurant'
+    'Taco Place',
+    'Pasta House',
+    'Burger Joint'
   ];
 
   hiltonHotels = [

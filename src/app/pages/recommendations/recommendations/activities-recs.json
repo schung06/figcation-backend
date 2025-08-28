@@ -3,18 +3,18 @@
         "title": "San Diego Zoo",
         "location": "San Diego, CA",
         "price": "$$",
-        "image": "assets/san-diego-zoo.jpg"
+        "image": "assets/assets/zoo.jpeg"
     },
     {
         "title": "Balboa Park",
         "location": "San Diego, CA",
         "price": "$",
-        "image": "assets/balboa-park.jpg"
+        "image": "assets/assets/balboa.webp"
     },
     {
         "title": "Hotel Del Coronado",
         "location": "Coronado, CA",
         "price": "$$$",
-        "image": "assets/hotel-del-coronado.jpg"
+        "image": "assets/assets/coronado.jpeg"
     }
 ]

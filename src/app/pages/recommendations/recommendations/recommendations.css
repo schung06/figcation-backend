@@ -55,14 +55,14 @@ app-nav-bar {
 .title {
     position: absolute;
     top: 40px;
-    left: 70px;
+    left: 40px;
     font-family: Poppins;
 }
 
 .frame-parent {
     position: absolute;
     top: 125px;
-    left: 70px;
+    left: 40px;
     width: 1281px;
     display: flex;
     flex-direction: column;
@@ -100,15 +100,17 @@ app-nav-bar {
     color: #000;
 }
 
-.frame-group {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    border-radius: 0px 0px 12px 12px;
-    background-color: #fff;
-    width: 412px;
-    height: 136px;
-    overflow: hidden;
+.recs-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+}
+
+.recs-list::-webkit-scrollbar {
+    display: none;
 }
 
 .restaurant-parent {
@@ -168,8 +170,8 @@ app-nav-bar {
 
 .skip-recommendations-wrapper {
     position: absolute;
-    right: 79px;
-    bottom: 60px;
+    top: 80%;
+    left: 60%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
     background-color: #203e5b;
