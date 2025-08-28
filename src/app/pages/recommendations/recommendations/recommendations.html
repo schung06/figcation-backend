@@ -1,12 +1,40 @@
-<div class="recs-container">
-    <div class="recs-content">
-        <div class="recs-list">
-            <app-recs-card *ngFor="let rec of recs"
-                [title]="rec.title"
-                [location]="rec.location"
-                [price]="rec.price"
-                [image]="rec.image">
-            </app-recs-card>
+<body>
+    <div class="recs-container">
+        <div class="recs-content">
+
+            <div class="reccommendations">
+                <b class="recommendations">Recommendations</b>
+                <div class="frame-parent">
+                    <div class="recs-row">
+                        <div class="restaurants">Restaurants</div>
+                        <div class="instance-parent">
+                            <div class="recs-list">
+                                <app-recs-card *ngFor="let rec of restaurantRecs" [title]="rec.title" [location]="rec.location" [price]="rec.price"
+                                    [image]="rec.image">
+                                </app-recs-card>
+                            </div>
+                            <img class="weuiarrow-filled-icon" alt="" src="weui:arrow-filled.svg">
+                        </div>
+                    </div>
+                    <div class="recs-row">
+                        <div class="restaurants">Activities</div>
+                        <div class="instance-parent">
+                            <div class="recs-list">
+                                <app-recs-card *ngFor="let rec of activitiesRecs" [title]="rec.title" [location]="rec.location" [price]="rec.price"
+                                    [image]="rec.image">
+                                </app-recs-card>
+                            </div>
+                            <img class="weuiarrow-filled-icon" alt="" src="weui:arrow-filled.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <img class="shape-icon" alt="" src="Shape.png">
+                </div>
+                <div class="skip-recommendations-wrapper">
+                    <b class="restaurant">Skip Recommendations </b>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</body>

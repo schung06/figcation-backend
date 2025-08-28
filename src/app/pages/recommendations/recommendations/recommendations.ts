@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import recsData from './recs-data.json';
+import restaurantRecsData from './restaurant-recs.json';
+import activitiesRecsData from './activities-recs.json';
 import { RecsCard } from "../recs-card/recs-card";
 
 
@@ -11,7 +12,8 @@ import { RecsCard } from "../recs-card/recs-card";
   styleUrl: './recommendations.css'
 })
 export class Recommendations {
-    recs = recsData;
+  restaurantRecs = restaurantRecsData;
+  activitiesRecs = activitiesRecsData;
 }
 
 

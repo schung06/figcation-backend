@@ -4,7 +4,7 @@
     border-radius: 12px;
     height: 416px;
     overflow: hidden;
-    background-image: url('recommendation card.png');
+    /*background-image: url('recommendation card.png');*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
