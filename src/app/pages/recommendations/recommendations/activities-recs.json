@@ -1,20 +1,20 @@
 [
-{
-    "title": "San Diego Zoo",
-    "location": "San Diego, CA",
-    "price": "$$",
-    "image": "assets/san-diego-zoo.jpg"
-  },
-  {
-    "title": "Balboa Park",
-    "location": "San Diego, CA",
-    "price": "$",
-    "image": "assets/balboa-park.jpg"
-  },
-  {
-    "title": "Hotel Del Coronado",
-    "location": "Coronado, CA",
-    "price": "$$$",
-    "image": "assets/hotel-del-coronado.jpg"
-  }
+    {
+        "title": "San Diego Zoo",
+        "location": "San Diego, CA",
+        "price": "$$",
+        "image": "assets/san-diego-zoo.jpg"
+    },
+    {
+        "title": "Balboa Park",
+        "location": "San Diego, CA",
+        "price": "$",
+        "image": "assets/balboa-park.jpg"
+    },
+    {
+        "title": "Hotel Del Coronado",
+        "location": "Coronado, CA",
+        "price": "$$$",
+        "image": "assets/hotel-del-coronado.jpg"
+    }
 ]

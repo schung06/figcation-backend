@@ -3,10 +3,10 @@
         <div class="recs-content">
 
             <div class="reccommendations">
-                <b class="recommendations">Recommendations</b>
+                <b class="title">Recommendations</b>
                 <div class="frame-parent">
                     <div class="recs-row">
-                        <div class="restaurants">Restaurants</div>
+                        <div class="subtitle">Restaurants</div>
                         <div class="instance-parent">
                             <div class="recs-list">
                                 <app-recs-card *ngFor="let rec of restaurantRecs" [title]="rec.title" [location]="rec.location" [price]="rec.price"
@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div class="recs-row">
-                        <div class="restaurants">Activities</div>
+                        <div class="subtitle">Activities</div>
                         <div class="instance-parent">
                             <div class="recs-list">
                                 <app-recs-card *ngFor="let rec of activitiesRecs" [title]="rec.title" [location]="rec.location" [price]="rec.price"

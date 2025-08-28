@@ -47,30 +47,29 @@ app-nav-bar {
     height: 1404px;
     overflow: hidden;
     text-align: left;
-    font-size: 36px;
+    font-size: 30px;
     color: #203e5b;
     font-family: 'Public Sans';
 }
 
-.recommendations {
+.title {
     position: absolute;
-    top: 108px;
-    left: 80px;
-    line-height: 42px;
+    top: 40px;
+    left: 70px;
     font-family: Poppins;
 }
 
 .frame-parent {
     position: absolute;
-    top: 224px;
-    left: 80px;
+    top: 125px;
+    left: 70px;
     width: 1281px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 76px;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .recs-row {
@@ -82,10 +81,12 @@ app-nav-bar {
     gap: 20px;
 }
 
-.restaurants {
+.subtitle {
     align-self: stretch;
     position: relative;
-    line-height: 36px;
+    line-height: 20px; 
+    font-size: 23px;
+    top: 0px;
 }
 
 .instance-parent {
